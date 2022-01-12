@@ -13,7 +13,7 @@ namespace RedDog.LoyaltyService.Controllers
     public class LoyaltyController : ControllerBase
     {
         private const string OrderTopic = "orders";
-        private const string PubSubName = "reddog.pubsub";
+        private const string PubSubName = "reddog.pubsub.loyalty";
         private const string LoyaltyStateStoreName = "reddog.state.loyalty";
         private readonly ILogger<LoyaltyController> _logger;
         private readonly DaprClient _daprClient;

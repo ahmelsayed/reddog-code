@@ -14,7 +14,7 @@ namespace RedDog.ReceiptGenerationService.Controllers
     public class ReceiptGenerationConsumerController : ControllerBase
     {
         private const string OrderTopic = "orders";
-        private const string PubSubName = "reddog.pubsub";
+        private const string PubSubName = "reddog.pubsub.receipt";
         private const string ReceiptBindingName = "reddog.binding.receipt";
         private readonly ILogger<ReceiptGenerationConsumerController> _logger;
 

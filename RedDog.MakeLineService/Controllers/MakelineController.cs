@@ -18,7 +18,7 @@ namespace RedDog.MakeLineService.Controllers
     {
         private const string OrderTopic = "orders";
         private const string OrderCompletedTopic = "ordercompleted";
-        private const string PubSubName = "reddog.pubsub";
+        private const string PubSubName = "reddog.pubsub.makeline";
         private const string MakeLineStateStoreName = "reddog.state.makeline";
         private readonly ILogger<MakelineController> _logger;
         private readonly DaprClient _daprClient;

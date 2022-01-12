@@ -19,7 +19,7 @@ namespace RedDog.OrderService.Controllers
         private readonly ILogger<OrderController> _logger;
         private readonly DaprClient _daprClient;
         private const string OrderTopic = "orders";
-        private const string PubSubName = "reddog.pubsub";
+        private const string PubSubName = "reddog.pubsub.order";
 
         public OrderController(ILogger<OrderController> logger, DaprClient daprClient)
         {

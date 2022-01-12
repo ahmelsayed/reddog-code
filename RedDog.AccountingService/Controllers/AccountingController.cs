@@ -17,7 +17,7 @@ namespace RedDog.AccountingService.Controllers
     [Route("[controller]")]
     public class AccountingController : ControllerBase
     {
-        private const string PubSubName = "reddog.pubsub";
+        private const string PubSubName = "reddog.pubsub.accounting";
         private const string OrderTopic = "orders";
         private const string OrderCompletedTopic = "ordercompleted";
         private readonly ILogger<AccountingController> _logger;
